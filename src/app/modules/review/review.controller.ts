@@ -27,13 +27,14 @@ const createComment = catchAsync(async (req: Request, res: Response) => {
 const getComment = catchAsync(async(req:Request,res:Response) => {
   const bookId = new Types.ObjectId(req.params.id);
   const result = await ReviewService.getComment(bookId)
-  sendResponse<IBook[]>(res,{
+  sendResponse<IBook[] | { comments: string[] }>(res,{
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Comments fetched successfully!',
+    message: 'Comments fetched successfully!', 
     data: {
       comments: result.comments,
     },
+    
   })
 });
 
