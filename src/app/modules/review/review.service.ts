@@ -1,6 +1,5 @@
 import { Types } from "mongoose";
 import { Book } from "../books/books.model";
-//import { IBook } from "../books/books.interface";
 
 //! Create comment Service
 const createcomment = async (bookId: Types.ObjectId, comment: string) => {

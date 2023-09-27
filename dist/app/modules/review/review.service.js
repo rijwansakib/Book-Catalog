@@ -11,7 +11,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ReviewService = void 0;
 const books_model_1 = require("../books/books.model");
-//import { IBook } from "../books/books.interface";
 //! Create comment Service
 const createcomment = (bookId, comment) => __awaiter(void 0, void 0, void 0, function* () {
     try {

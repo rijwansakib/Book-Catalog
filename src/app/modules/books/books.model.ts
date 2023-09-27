@@ -1,5 +1,3 @@
-// books.model.ts
-
 import mongoose, { model} from 'mongoose';
 import { BooksModel, IBook } from './books.interface';
 

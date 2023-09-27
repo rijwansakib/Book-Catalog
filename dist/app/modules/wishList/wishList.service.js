@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.wishListService = void 0;
-delete require.cache[require.resolve('../books/books.model.ts')]; // Replace with the path to your model file
+delete require.cache[require.resolve('../books/books.model.js')]; // Replace with the path to your model file
 const wishList_model_1 = require("./wishList.model");
 const createWish = (payload) => __awaiter(void 0, void 0, void 0, function* () {
     const existingWish = yield wishList_model_1.Wish.findOne({
